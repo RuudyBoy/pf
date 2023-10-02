@@ -26,3 +26,38 @@ nav li {
   display: inline;
   padding: 10px
 }
+
+.bakgrunn {
+  background: url(./images/Bakgrunn.jpeg);
+  background-size: cover;
+}
+
+h1 {
+  display: inline;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+
+.info {
+  grid-column: 1;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.logo {
+  max-width: 50px;
+}
+
+.logo-big {
+  max-width: 200px;
+  margin: 10px auto;
+}
+
+.meg {
+  width: 80%;
+  margin: 0px auto;
+}

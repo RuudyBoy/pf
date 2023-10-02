@@ -1,12 +1,24 @@
 import React from 'react';
-
+import Biglogo from "../../images/LogoXL.png"
+import Meg from "../../images/meg.png"
 
 function Home() {
     return (
-      <h1>Home</h1>
-    );
+    <body className='bakgrunn'>
+    <div className='container'>
+    <div className='info'>
+    <img className='logo-big' src={Biglogo} alt="sneek peak of project"/>
+    <h1>Prototype</h1>
+    <p>A student who are finished with my frontend development studies at Noroff. My focus is on writing clean and efficient code. I am a big fan of React, HTML5, CSS/SCSS and plain Javascript. </p>
+    </div>
+    <div className='image'>
+    <img className='meg' src={Meg} alt="sneek peak of project"/>
+    </div>
+      </div>
+    </body>
+    
+  );
   }
 
-/*const Home = () => <h1>Håvard er</h1>;*/
 
 export default Home;

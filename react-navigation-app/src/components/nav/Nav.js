@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import Home from '../home/Home';
 import About from '../about/About';
+import Logo from "../../images/logo.png"
 
 
 function Nav () {
@@ -10,6 +10,7 @@ function Nav () {
 <Router> 
 <nav>
 <ul>
+<img className='logo' src={Logo} alt="sneek peak of project"/>
   <li>
     <Link to="/">Home</Link>
   </li>
