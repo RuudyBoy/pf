@@ -11,7 +11,7 @@ function Nav () {
 <nav>
 <ul>
   <li>
-    <Link to="/home">Home</Link>
+    <Link to="/">Home</Link>
   </li>
   <li>
     <Link to="/about">About</Link>
@@ -19,7 +19,7 @@ function Nav () {
 </ul>
 </nav>
 <Routes>
-<Route path="/home" element={<Home/>} />
+<Route path="/" element={<Home/>} />
 <Route path="/about" element={<About />} />
 </Routes>
 </Router>

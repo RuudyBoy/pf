@@ -5,8 +5,24 @@ html, body, #root, .App {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 nav {
   background-color: black;
   width: 100%;
+  text-decoration: none;
+  padding: 20px;
+}
 
+nav ul {
+  display: inline;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  padding: 10px
 }
