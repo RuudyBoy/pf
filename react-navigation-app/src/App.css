@@ -2,7 +2,20 @@ html, body, #root, .App {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+  max-width: 500px;
+  margin: auto;
 }
 
 a {
@@ -12,7 +25,6 @@ a {
 
 nav {
   background-color: black;
-  width: 100%;
   text-decoration: none;
   padding: 20px;
 }
@@ -38,13 +50,16 @@ h1 {
 
 .container {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  min-height: 100vh
 }
 
 .info {
-  grid-column: 1;
-  margin: 10px auto;
+  
+  display: flex;
+  flex-direction: column; /* stack children vertically */
+  align-items: center; /* horizontally center-align children */
   text-align: center;
 }
 
@@ -53,11 +68,24 @@ h1 {
 }
 
 .logo-big {
-  max-width: 200px;
+  max-width: 120px;
   margin: 10px auto;
 }
 
 .meg {
-  width: 80%;
+  width: 90%;
   margin: 0px auto;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.footer {
+  height: 100px;
+  background: black;
+  color: white;
+  padding: 20px;
+  margin-bottom: 0px !important;
 }
