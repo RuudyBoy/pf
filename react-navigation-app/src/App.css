@@ -15,7 +15,7 @@ font-size: 30px;
 p {
   font-size: 20px;
   max-width: 500px;
-  margin: auto;
+  margin: 40px auto;
 }
 
 a {
@@ -24,7 +24,8 @@ a {
 }
 
 nav {
-  background-color: black;
+  background: rgb(10,73,228);
+  background: linear-gradient(30deg, rgba(10,73,228,1) 62%, rgba(82,83,221,1) 86%);
   text-decoration: none;
   padding: 20px;
 }
@@ -51,16 +52,15 @@ h1 {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  place-items: center;
   min-height: 100vh
 }
 
 .info {
   
-  display: flex;
-  flex-direction: column; /* stack children vertically */
-  align-items: center; /* horizontally center-align children */
+  flex-direction: column; 
+  align-items: center; 
   text-align: center;
+  margin: 40px auto;
 }
 
 .logo {
@@ -73,7 +73,7 @@ h1 {
 }
 
 .meg {
-  width: 90%;
+  width: 70%;
   margin: 0px auto;
 }
 
@@ -88,4 +88,33 @@ h1 {
   color: white;
   padding: 20px;
   margin-bottom: 0px !important;
+}
+
+.cta-button {
+  background: rgb(10,73,228);
+  background: linear-gradient(30deg, rgba(10,73,228,1) 0%, rgba(82,83,221,1) 65%);
+  padding: 10px 50px;
+  border-radius: 10px;
+  border: none;
+}
+
+.cta-button:hover {
+  background: rgb(10,73,228);
+  background: linear-gradient(30deg, rgba(10,73,228,1) 62%, rgba(82,83,221,1) 86%);
+  transition: 10s;
+  
+}
+
+.project {
+  margin: 10px auto;
+  max-width: 500px;
+  background: rgb(10,73,228);
+  background: linear-gradient(30deg, rgba(10,73,228,1) 62%, rgba(82,83,221,1) 86%);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.solarsmart {
+  width: 100%;
 }
